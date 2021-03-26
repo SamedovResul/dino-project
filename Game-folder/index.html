@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="css/style.css">
+	<title>Document</title>
+</head>
+<body>
+	<p>Pikadan sürpriz dinozavr oyunu!</p>
+	<canvas class="canvas" id="game" height="200" width="800"></canvas>
+	<p class="controls">Boshluq duymesini sixin</p>
+	<button class="btn" id="btn">Başla</button>
+	<button class="btn2" id="reload">Yenilə</button>
+
+
+
+	<script src="js/helpers.js"></script>
+	<script src="js/objects/game-object.js"></script>
+	<script src="js/objects/cactus.js"></script>
+	<script src="js/objects/dinosaur.js"></script>
+	<script src="js/objects/background.js"></script>
+	<script src="js/objects/score.js"></script>
+	<script src="js/game.js"></script>
+	<script>
+		new Game({
+			el: document.getElementById("game")
+		});
+	</script>
+	
+</body>
+</html>
+
+
+

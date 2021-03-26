@@ -1,0 +1,274 @@
+body{
+    background-image: url('../img/bgimage.png');
+    display: flex;
+    justify-content:center ;
+    align-items:center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    height: 650px;
+}
+
+.container{
+    background-position: center;
+    background-size: cover;
+    width: 40%;
+    height: 100%;
+    border-radius: 20px;
+    text-align: center;
+    background-color: #39DEE3;
+}
+
+.quizbox{
+    padding-top: 20px;
+    height: 55%;
+    width: 90%;
+    border-radius: 20px;
+    background-color: white;
+    margin-left: auto;
+    margin-right:auto ;
+}
+
+.imgbox{
+    background-color: #39DEE3;
+    height: 40%;
+    border-radius: 20px;
+    display: flex;
+    align-items: flex-end;
+}  
+
+
+.quiz-container{
+    height: 70%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+}
+
+.quiz-option{
+    width: 80%;
+    display: flex;
+    align-items: center;
+    margin-left: 15px;
+    padding-right: 10px;
+    cursor: pointer;
+    margin: 0 auto;
+    height: 20px;
+    border-radius: 20px;
+    padding: 10px 0;
+    border: 1px solid transparent;
+    transition: 0.3s;
+}
+
+.question-variant{
+    margin-left: 10px;
+    color: white;
+    border-radius: 30px;
+    padding: 5px 9px 5px 9px;
+}
+
+
+
+.quiz-option label{
+    font-weight: 700;
+    font-size: 20px;
+    margin-left: 8px;
+    color: white;
+}
+
+
+.quiz-option:nth-child(1) {
+    background: #c4f3b4 ;
+    
+}
+.quiz-option:nth-child(1) span {
+    background: #6aee3e  ;
+}
+
+
+.quiz-option:nth-child(2) {
+    background: #f8c1f8 ;
+    
+}
+.quiz-option:nth-child(2) span {
+    background: #e94ee9  ;
+}
+
+.quiz-option:nth-child(3) {
+    background: #F5E698 ;
+    
+}
+
+.quiz-option:nth-child(3) span {
+    background: #ddc02e  ;
+}
+
+
+.quiz-option:nth-child(4) {
+    background: rgb(153, 210, 233) ;
+    
+}
+.quiz-option:nth-child(4)  span{
+    background: rgb(64, 192, 243) ;
+}
+
+.quiz-option:hover{
+    border: 1px solid black;
+}
+
+
+
+.input{
+    opacity: -2;
+    margin-left: 13px;
+    width: 10%;
+    height: 2em;
+}
+
+
+.question{
+    font-family: Georgia;
+    margin-top: 20px;
+    color: black;
+    font-size: 20px;
+}
+
+.gamelink{
+    color: black;
+    text-decoration: none;
+    border: 2px solid red;
+    border-radius: 20px;
+    font-size: 15px;
+    font-weight: 700;
+    display: none;
+    margin-top: 20px;
+    width: 70%;
+}
+
+.responsive{
+    width: 100%;
+    height: 100%;
+}
+
+.click{
+    height: 35px;
+    width: 100px;
+    border: none;
+    background-color: blueviolet;
+    border-radius: 30px;
+    border: none;
+    color: white;
+    font-weight: 700;
+    outline: none;
+    /* margin: 10px 0px 10px 0px; */
+}
+
+.warning{
+    display: none;
+    color: red;
+    margin-block-start: 0em;
+    margin-block-end: 0em;
+    margin-top: 10px;
+}
+
+
+@media(max-width:1024px){
+    body{
+        height: 1000px;
+    }
+    .container{
+        height: 70%;
+    }
+}
+
+@media(max-width:991px){
+    .container{
+        height: 600px;
+        width: 50%;
+    }
+}
+
+@media(max-width:797px){
+    .quizbox{
+        padding-top: 10px !important;
+        height: 60%;
+    }
+    .imgbox{
+        height: 30%;
+    }
+    
+    .quiz-option label{
+        font-weight: 800;
+        font-size: 12px;
+        margin-left: 5px;
+    }
+    .question{
+        margin-top: 20px;
+        margin-bottom: 20px;
+        font-size: 15px;
+    }
+    .container{
+        height: 600px;
+        width: 50%;
+    }
+    .responsive{
+        width: 100%;
+        height: auto;
+        margin-left: auto;
+        margin-right: auto  ;
+    }
+}
+
+@media(max-width:496px){
+    body{
+        height: 730px;
+    }
+    .quizbox{
+        padding-top: 10px !important;
+        height: 65%;
+    }
+    .question{
+        margin-top: 10px;
+        margin-bottom: 10px;
+        font-size: 15px;
+    }
+    .quiz-container{
+        margin-top: 30px;
+        margin-bottom: 5px;
+    }
+    .imgbox{
+        display: flex;
+        align-items: flex-end;
+        height: 25% ;
+    }   
+    .container{
+        height: 550px;
+        width: 60%;
+    }
+    .click{
+        margin-bottom: -5px;
+    }
+    
+}
+
+@media(max-width:395px){
+    .container{
+        height: 480px;
+    }
+    .gamelink{
+        margin-top: 10px;
+    }
+    .quiz-container{
+        margin:15px 0px 0px 0px;
+    }
+    
+}
+
+@media(max-width:345px){
+    .quiz-option label{
+        font-weight: 800;
+        font-size: 10px;
+        margin-left: 5px;
+    }
+}
